@@ -3,19 +3,20 @@
 ##########
 # Colors #
 ##########
-RED='\033[31m'
-GREEN='\033[32m'
-RESET='\033[0m'
+RED=$'\033[31m'
+GREEN=$'\033[32m'
+YELLOW=$'\033[33m'
+RESET=$'\033[0m'
 
 ##################
 # Welcome screen #
 ##################
 sleep 1
-echo -e "\n################################"
+echo -e "${YELLOW}\n################################${RESET}"
 sleep 1
-echo "  Loading ministry terminal..."
+echo -e "${YELLOW}  Loading ministry terminal...${RESET}"
 sleep 1
-echo -e "################################\n"
+echo -e "${YELLOW}################################${RESET}\n"
 sleep 3
 
 #######################
@@ -47,3 +48,34 @@ else
     echo -e "\n${RED}Access denied! Incorrect password.${RESET}\n"
     exit 1
 fi
+
+#################################
+# Surveillance system main menu #
+#################################
+while true; do
+    echo "Surveillance System Main Menu"
+    echo "User: $PLAYER_NAME"
+    sleep 1
+    read -p "${YELLOW}Please select an option (1 - Scan citizen; 2 - Report violation; 3 - Exit): ${RESET}" MENU_OPTION
+    sleep 1
+
+    case $MENU_OPTION in
+        1)
+            echo -e "\nScanning citizen... (Module under development)\n"
+            sleep 1
+            ;;
+        2)
+            echo -e "\nReporting violation... (Module under development)\n"
+            sleep 1
+            ;;
+        3)
+            echo -e "\n${GREEN}Exiting the surveillance system. Goodbye, $PLAYER_NAME!${RESET}\n"
+            sleep 1
+            exit 0
+            ;;
+        *)
+            echo -e "\n${RED}Invalid option. Please try again.${RESET}\n"
+            sleep 1
+            ;;
+    esac
+done
