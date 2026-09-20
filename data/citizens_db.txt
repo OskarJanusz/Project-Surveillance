@@ -1,0 +1,15 @@
+ID-001, Carl Stein, Landlord, Model
+ID-002, Anna Stein, Housewife, Good
+ID-003, Patrick Stein, Miner, Model
+ID-004, Martha Stein, None, Model
+ID-005, Klaus Schimmer, Salesman, Suspect
+ID-006, Maria Schimmer, Teacher, Suspect
+ID-007, Mark Ranek, Archive employee, Model
+ID-008, Rosa Ranek, Cook, Model
+ID-009, Alloisius Shpak, Doctor, Model
+ID-010, Evan Redgrave, Official, Suspect
+ID-011, James Cunningham, Investigator, Good
+ID-012, Magda Rakovich, Secretary, Suspect
+ID-013, Winston Smith, Official, Suspect
+ID-014, Joseph O'Brien, Official, Model
+ID-015, Nathan Kehler, Seller, Unknown

@@ -29,7 +29,7 @@ sleep 1
 read -s -p "Please enter your new password: " PLAYER_PASSWORD
 echo
 sleep 1
-echo -e "\nAccount created successfully! Welcome, $PLAYER_NAME.\n"
+echo -e "\nAccount created successfully! Welcome, ${GREEN}$PLAYER_NAME${RESET}.\n"
 sleep 3
 
 #####################
@@ -37,7 +37,7 @@ sleep 3
 #####################
 echo -e "Please, log in to the surveillance system to start your work.\n"
 sleep 3
-echo "User: $PLAYER_NAME"
+echo -e "User: ${GREEN}$PLAYER_NAME${RESET}"
 read -s -p "Password: " TYPED_PASSWORD
 echo
 sleep 3
@@ -53,8 +53,8 @@ fi
 # Surveillance system main menu #
 #################################
 while true; do
-    echo "Surveillance System Main Menu"
-    echo "User: $PLAYER_NAME"
+    echo -e "${YELLOW}Surveillance System Main Menu${RESET}"
+    echo -e "User: ${GREEN}$PLAYER_NAME${RESET}"
     sleep 1
     read -p "${YELLOW}Please select an option (1 - Scan citizen; 2 - Report violation; 3 - Exit): ${RESET}" MENU_OPTION
     sleep 1
